@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Pago App</string>
+    <string name="fragment_amount">Seleccione el monto</string>
+    <string name="other_string_fragment_amount">Otro monto</string>
+    <string name="amount_100">$ 100</string>
+    <string name="amount_80">$ 80</string>
+    <string name="amount_60">$ 60</string>
+    <string name="amount_40">$ 40</string>
+    <string name="amount_20">$ 20</string>
+    <string name="action_next">Next</string>
+    <string name="must_select_amount">Debe seleccionar o escribir el monto</string>
+    <string name="fragment_payment_method">Metodo de pago</string>
+    <string name="icon_method_payment">Icon method payment</string>
+    <string name="fragment_bank">Emisores de tarjetas</string>
+    <string name="cargando">Cargando…</string>
+    <string name="fragment_installments">Cuotas</string>
+    <string name="payment_amount">Monto: $%.2f</string>
+    <string name="start_over">Iniciar nuevamente</string>
+    <string name="amount_required">El monto es requerido.</string>
+</resources>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Payment App</string>
+    <string name="fragment_amount">Select amount</string>
+    <string name="other_string_fragment_amount">Other amount</string>
+    <string name="amount_100">$ 100</string>
+    <string name="amount_80">$ 80</string>
+    <string name="amount_60">$ 60</string>
+    <string name="amount_40">$ 40</string>
+    <string name="amount_20">$ 20</string>
+    <string name="action_next">Next</string>
+    <string name="must_select_amount">Must select or write the amount</string>
+    <string name="fragment_payment_method">Payment Method</string>
+    <string name="icon_method_payment">Icon method payment</string>
+    <string name="fragment_bank">Card Issuers</string>
+    <string name="cargando">Loading…</string>
+    <string name="fragment_installments">Installments</string>
+    <string name="payment_amount">Amount: $%.2f</string>
+    <string name="start_over">Start Over</string>
+    <string name="amount_required">The amount is required.</string>
+</resources>

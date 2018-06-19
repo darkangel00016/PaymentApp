@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_form">20dp</dimen>
+    <dimen name="margin_fields">10dp</dimen>
+    <dimen name="text_amount">18sp</dimen>
+</resources>

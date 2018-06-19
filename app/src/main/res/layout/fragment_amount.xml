@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context=".AmountFragment"
+    android:background="@color/white">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AmountFragment"
+        android:id="@+id/form"
+        android:visibility="visible">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_fields"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/button_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/amount_20"
+                style="@style/ButtonAmount"/>
+
+            <View android:layout_height="1dp"
+                android:layout_width="match_parent"
+                style="@style/SeparatorButton"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/button_40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/amount_40"
+                style="@style/ButtonAmount"/>
+
+            <View android:layout_height="1dp"
+                android:layout_width="match_parent"
+                style="@style/SeparatorButton"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/button_60"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/amount_60"
+                style="@style/ButtonAmount"/>
+
+            <View android:layout_height="1dp"
+                android:layout_width="match_parent"
+                style="@style/SeparatorButton"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/button_80"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/amount_80"
+                style="@style/ButtonAmount"/>
+
+            <View android:layout_height="1dp"
+                android:layout_width="match_parent"
+                style="@style/SeparatorButton"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/button_100"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/amount_100"
+                style="@style/ButtonAmount"/>
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/otherAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/other_string_fragment_amount"
+                android:inputType="numberDecimal" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/action_next"
+                style="@style/ButtonNext"/>
+        </LinearLayout>
+    </ScrollView>
+    <android.support.v7.widget.CardView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/payment"
+        card_view:cardCornerRadius="4dp"
+        android:layout_margin="@dimen/margin_fields"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_form">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textAmount"
+                android:layout_marginBottom="@dimen/margin_fields"
+                style="@style/Base.DialogWindowTitle.AppCompat"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_fields">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/iconMethodPayment"
+                    android:contentDescription="@string/icon_method_payment"
+                    android:src="@drawable/creditcard"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/labelMethodPayment"
+                    android:layout_weight="1"
+                    style="@style/Base.DialogWindowTitle.AppCompat"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_fields">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/iconCardIssuer"
+                    android:contentDescription="@string/icon_method_payment"
+                    android:src="@drawable/creditcard"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/labelCardIssuer"
+                    android:layout_weight="1"
+                    style="@style/Base.DialogWindowTitle.AppCompat"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInstallment"
+                android:layout_marginBottom="@dimen/margin_fields"
+                style="@style/Base.DialogWindowTitle.AppCompat"/>
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/start_over"
+                android:layout_gravity="center"
+                android:id="@+id/action_start_over"
+                style="@style/ButtonNext"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</android.support.design.widget.CoordinatorLayout>
